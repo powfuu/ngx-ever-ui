@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.important {
+  cursor: pointer;
+  color: var(--black);
+  font-weight: bold;
+}
+
+code {
+  background: var(--black);
+  color: var(--gray-dark);
+  padding: 38px 22px;
+  padding-bottom: 15px;
+  border-radius: var(--border-radius);
+  font-size: 15.5px;
+  position: relative;
+}
+
+code::before,
+code::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid transparent;
+}
+
+code::before {
+  top: 10px;
+  left: 10px;
+  background: var(--red);
+}
+
+code::after {
+  top: 10px;
+  left: 32px;
+  background: var(--yellow);
+}
+
+.start-command-line {
+  color: #fff;
+  margin-right: 8px;
+  user-select: none;
+}
+
+.code-container {
+  margin-top: 25px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.import {
+  color: #56b6c2; /* Cyan */
+}
+
+.package-import {
+  color: #61afef; /* Blue */
+}
+
+.from {
+  color: #c678dd; /* Purple */
+}
+
+.string {
+  color: #a3de79; /* Green */
+}
+
+.tag {
+  color: rgb(255, 130, 130); /* Green */
+}
+
+.declarations {
+  color: #fcb16b; /* Orange */
+}
+
+.points,
+.corchetes,
+.text-base,
+.comma {
+  color: #abb2bf; /* Gray */
+}
+
+.package-text {
+  color: #61afef; /* Blue */
+}
+
+.text-desc {
+  font-size: var(--fz-md);
+  margin-top: 10px;
+  margin-bottom: 6px;
+  color: var(--light-secondary);
+}
+e-item div {
+  width: 100% !important;
+}
+
+p {
+  color: var(--light-secondary);
+}
+
+.small-text {
+  font-size: var(--fz-sm);
+}

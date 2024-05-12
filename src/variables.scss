@@ -1,0 +1,45 @@
+:root {
+  --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+  --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  --fz-ss: 10px;
+  --fz-s: 11px;
+  --fz-x: 12px;
+  --fz-xx: 13px;
+  --fz-xxs: 14px;
+  --fz-xs: 15px;
+  --fz-sm: 16px;
+  --fz-4sm: 16px;
+  --fz-md: 17px;
+  --fz-lg: 19px;
+  --fz-xl: 21px;
+  --fz-xxl: 23px;
+  --fz-3xl: 25px;
+  --fz-4xl: 29px;
+  --fz-heading: 32px;
+  --border-radius: 4px;
+  --nav-height: 100px;
+  --nav-scroll-height: 70px;
+  --tab-height: 42px;
+  --tab-width: 120px;
+  --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  --hamburger-width: 30px;
+  --ham-before: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
+  --ham-before-active: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
+  --ham-after: bottom 0.1s ease-in 0.25s,
+    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  --ham-after-active: bottom 0.1s ease-out,
+    transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+
+  --black: #121212;
+  --gray: #f3f3f3;
+  --gray-dark: #e4e4e4;
+  --light-secondary: #777777;
+  --ultra-light: #b9b9b9;
+  --codec: rgb(229, 229, 229);
+  --transparent: #dcdcdc59;
+  --border: #d4d4d4bc;
+  --red: rgb(255, 91, 91);
+  --yellow: rgb(255, 255, 117);
+}

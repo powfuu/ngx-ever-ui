@@ -1,0 +1,118 @@
+<header-title title="Toast"
+    description="e-toast es un componente personalizado diseñado para mostrar mensajes breves o notificaciones en la interfaz de usuario. Con una variedad de temas de personalización y propiedades, es altamente versátil y útil en el desarrollo de aplicaciones. Además, ofrece la capacidad de crear alertas para diferentes ocasiones, como éxito, advertencia y error, brindando una solución completa para la comunicación con el usuario."></header-title>
+<br />
+<h2>Uso</h2>
+<p class="text-desc">Ejemplos básicos de cómo se visualiza y cómo utilizar e-toast de forma personalizada.</p>
+
+<br />
+<e-flex fd="column" gap="xl">
+    <h3>Toast Success</h3>
+    <p>Se utiliza para dar un mensaje de operación exitosa al realizar una acción.</p>
+</e-flex>
+<e-toast #toastSuccess [duration]="1000" text="Texto de toast" type="success"></e-toast>
+<div class="code-container">
+    <e-button (click)="mostrarToastSuccess()">Mostrar toast success</e-button>
+    <code>
+        &lt;<span class="tag">e-button</span> (<span class="declarations">click</span>)=<span class="string">"mostrarToastSuccess()"</span>&gt;Mostrar toast success&lt;/<span class="tag">e-button</span>&gt;<br>
+        &lt;<span class="tag">e-toast</span> [<span class="declarations">duration</span>]=<span class="string">"1000" </span> <span class="declarations">text</span>=<span class="string">"Texto de toast" </span> <span class="declarations">type</span>=<span class="string">"success"</span>&gt;&lt;/<span class="tag">e-toast</span>&gt;
+    </code>
+    <code>
+        <span class="declarations">@ViewChild</span>(<span class="string">'toastSuccess'</span>) <span class="from">toastSuccess</span>!: <span class="import">EtoastComponent</span>;<br>
+        <span class="import">mostrarToastSuccess</span>(): <span class="string">void</span> {{"{"}}<br>
+        &nbsp;&nbsp;<span class="tag">this</span>.<span class="from">toastSuccess</span>.<span class="import">showToast</span>();<br>
+        {{"}"}}
+    </code>
+</div>
+
+<br />
+<e-flex fd="column" gap="xl">
+    <h3>Toast Alerta</h3>
+    <p>Se utiliza para dar un mensaje de alerta al usuario.</p>
+</e-flex>
+<e-toast #toastAlert [duration]="2000" text="Texto de toast" type="alert"></e-toast>
+<div class="code-container">
+    <e-button (click)="mostrarToastAlert()">Mostrar toast alerta</e-button>
+    <code>
+        &lt;<span class="tag">e-button</span> (<span class="declarations">click</span>)=<span class="string">"mostrarToastAlert()"</span>&gt;Mostrar toast alerta&lt;/<span class="tag">e-button</span>&gt;<br>
+        &lt;<span class="tag">e-toast</span> [<span class="declarations">duration</span>]=<span class="string">"1000" </span> <span class="declarations">text</span>=<span class="string">"Texto de toast" </span> <span class="declarations">type</span>=<span class="string">"alerta"</span>&gt;&lt;/<span class="tag">e-toast</span>&gt;
+    </code>
+    <code>
+        <span class="declarations">@ViewChild</span>(<span class="string">'toastAlert'</span>) <span class="from">toastAlert</span>!: <span class="import">EtoastComponent</span>;<br>
+        <span class="import">mostrarToastAlert</span>(): <span class="string">void</span> {{"{"}}<br>
+        &nbsp;&nbsp;<span class="tag">this</span>.<span class="from">toastAlert</span>.<span class="import">showToast</span>();<br>
+        {{"}"}}
+    </code>
+</div>
+
+<br />
+<e-flex fd="column" gap="xl">
+    <h3>Toast Warning</h3>
+    <p>Se utiliza para dar un mensaje warning al usuario.</p>
+</e-flex>
+<e-toast #toastWarning [duration]="1000" text="Texto de toast" type="warning"></e-toast>
+<div class="code-container">
+    <e-button (click)="mostrarToastWarning()">Mostrar toast warning</e-button>
+    <code>
+        &lt;<span class="tag">e-button</span> (<span class="declarations">click</span>)=<span class="string">"mostrarToastWarning()"</span>&gt;Mostrar toast warning&lt;/<span class="tag">e-button</span>&gt;<br>
+        &lt;<span class="tag">e-toast</span> [<span class="declarations">duration</span>]=<span class="string">"1000" </span> <span class="declarations">text</span>=<span class="string">"Texto de toast" </span> <span class="declarations">type</span>=<span class="string">"warning"</span>&gt;&lt;/<span class="tag">e-toast</span>&gt;
+    </code>
+    <code>
+        <span class="declarations">@ViewChild</span>(<span class="string">'toastWarning'</span>) <span class="from">toastWarning</span>!: <span class="import">EtoastComponent</span>;<br>
+        <span class="import">mostrarToastWarning</span>(): <span class="string">void</span> {{"{"}}<br>
+        &nbsp;&nbsp;<span class="tag">this</span>.<span class="from">toastWarning</span>.<span class="import">showToast</span>();<br>
+        {{"}"}}
+    </code>
+</div>
+
+<br />
+<e-flex fd="column" gap="xl">
+    <h3>Toast Error</h3>
+    <p>Se utiliza para dar un mensaje de error al usuario.</p>
+</e-flex>
+<e-toast #toastError [duration]="1000" text="Texto de toast" type="error"></e-toast>
+<div class="code-container">
+    <e-button (click)="mostrarToastError()">Mostrar toast error</e-button>
+    <code>
+        &lt;<span class="tag">e-button</span> (<span class="declarations">click</span>)=<span class="string">"mostrarToastError()"</span>&gt;Mostrar toast error&lt;/<span class="tag">e-button</span>&gt;<br>
+        &lt;<span class="tag">e-toast</span> [<span class="declarations">duration</span>]=<span class="string">"1000" </span> <span class="declarations">text</span>=<span class="string">"Texto de toast" </span> <span class="declarations">type</span>=<span class="string">"error"</span>&gt;&lt;/<span class="tag">e-toast</span>&gt;
+    </code>
+    <code>
+        <span class="declarations">@ViewChild</span>(<span class="string">'toastError'</span>) <span class="from">toastError</span>!: <span class="import">EtoastComponent</span>;<br>
+        <span class="import">mostrarToastError</span>(): <span class="string">void</span> {{"{"}}<br>
+        &nbsp;&nbsp;<span class="tag">this</span>.<span class="from">toastError</span>.<span class="import">showToast</span>();<br>
+        {{"}"}}
+    </code>
+</div>
+
+<br /><br />
+<h2>Propiedades</h2>
+<p class="text-desc">Documentación de propiedades que contiene el componente e-toast.</p>
+<br />
+<e-flex fd="column" gap="xl">
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>text</h3>
+            <p class="small-text">Controla que texto contendrá el toast.</p>
+            <h4>values ("" por defecto)</h4>
+            <p class="small-text">Tipo string, puede contener cualquier valor.</p>
+        </e-flex>
+    </e-item>
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>type</h3>
+            <p class="small-text">Controla que tipo de toast manejará.</p>
+            <h4>values (alert por defecto)</h4>
+            <p class="small-text">alert | success | warning | error</p>
+        </e-flex>
+    </e-item>
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>duration</h3>
+            <p class="small-text">Controla la duración que tendrá la visualización del toast.</p>
+            <h4>values (2000 por defecto)</h4>
+            <p class="small-text">Tipo number, formato en segundos 1000 = 1s, 2000 = 2s...</p>
+        </e-flex>
+    </e-item>
+</e-flex>
+
+<pager [notfix]="true" previous="e-tooltip" next="e-loading"></pager>

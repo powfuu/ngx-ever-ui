@@ -1,0 +1,38 @@
+<header-title title="Search Input"
+    description="e-search es un componente de entrada personalizado diseñado específicamente para facilitar la búsqueda de contenido. Con funcionalidades especializadas y una interfaz intuitiva, permite a los usuarios buscar información de manera rápida y eficiente."></header-title>
+<br />
+<h2>Uso</h2>
+<p class="text-desc">Ejemplo básico de cómo se visualiza y cómo utilizar e-search de forma personalizada.</p>
+
+<div class="code-container">
+    <e-search placeholder="Buscar..." [(value)]="busqueda"></e-search>
+    <code>
+        &lt;<span class="tag">e-search </span> <span class="declarations">placeholder</span>=<span class="string">"Buscar..." </span> [(<span class="declarations">value</span>)]=<span class="string">"busquedaModelo"</span>&gt;&lt;/<span class="tag">e-search</span>&gt;
+    </code>
+</div>
+
+<br /><br />
+<h2>Propiedades</h2>
+<p class="text-desc">Documentación de propiedades que contiene el componente e-search.</p>
+<br />
+<e-flex fd="column" gap="xl">
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>placeholder</h3>
+            <p class="small-text">Controla que placeholder tendrá el search input.</p>
+            <h4>values ("" por defecto)</h4>
+            <p class="small-text">Tipo string, puede contener cualquier valor.</p>
+        </e-flex>
+    </e-item>
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>value</h3>
+            <p class="small-text">Controla el ngModel del input (siempre pasarle propiedad con [()] ya que el dato debe
+                ser compartido entre componentes, ejemplo: value=[(value)])="nombreModelo".</p>
+            <h4>values (null por defecto)</h4>
+            <p class="small-text">Puede contener cualquier modelo tipo string.</p>
+        </e-flex>
+    </e-item>
+</e-flex>
+
+<pager [notfix]="true" previous="e-input" next="e-tooltip"></pager>

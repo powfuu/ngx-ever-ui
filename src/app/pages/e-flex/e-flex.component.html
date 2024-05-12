@@ -1,0 +1,66 @@
+<header-title title="Flex Content"
+    description="e-flex es un componente diseñado para proporcionar flexibilidad en la disposición del contenido de la aplicación, facilitando una gestión eficiente y dinámica gracias a su estructura basada en flexbox."></header-title>
+<br />
+<h2>Uso</h2>
+<p class="text-desc">Ejemplos básicos de cómo se visualiza y cómo utilizar e-flex content.</p>
+
+<br />
+<e-flex fd="column" gap="xl">
+    <h3>Flex Row</h3>
+    <p>Se utiliza para que los elementos estén uno al lado de otro.</p>
+</e-flex>
+<div class="code-container">
+    <e-flex gap="m">
+        <p>Row 1</p>
+        <p>Row 2</p>
+    </e-flex>
+    <code>
+        &lt;<span class="tag">e-flex </span> <span class="declarations">gap</span>=<span class="string">"m"</span>&gt;<br>
+        &nbsp;&nbsp;&nbsp;&lt;<span class="tag">p</span>&gt;Row 1&lt;/<span class="tag">p</span>&gt;<br>
+        &nbsp;&nbsp;&nbsp;&lt;<span class="tag">p</span>&gt;Row 2&lt;/<span class="tag">p</span>&gt;<br>
+        &lt;/<span class="tag">e-flex</span>&gt;
+     </code>
+</div>
+
+<br />
+<e-flex fd="column" gap="xl">
+    <h3>Flex Column</h3>
+    <p>Se utiliza para que los elementos estén uno debajo de otro.</p>
+</e-flex>
+<div class="code-container">
+    <e-flex fd="column" gap="s">
+        <p>Row 1</p>
+        <p>Row 2</p>
+    </e-flex>
+    <code>
+        &lt;<span class="tag">e-flex </span> <span class="declarations">fd</span>=<span class="string">"column" </span> <span class="declarations">gap</span>=<span class="string">"s"</span>&gt;<br>
+        &nbsp;&nbsp;&nbsp;&lt;<span class="tag">p</span>&gt;Row 1&lt;/<span class="tag">p</span>&gt;<br>
+        &nbsp;&nbsp;&nbsp;&lt;<span class="tag">p</span>&gt;Row 2&lt;/<span class="tag">p</span>&gt;<br>
+        &lt;/<span class="tag">e-flex</span>&gt;
+     </code>
+</div>
+
+<br /><br />
+<h2>Propiedades</h2>
+<p class="text-desc">Documentación de propiedades que contiene el componente e-flex.</p>
+<br />
+<e-flex fd="column" gap="xl">
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>fd</h3>
+            <p class="small-text">Controla que valor tendrá flex-direction.</p>
+            <h4>values (row por defecto)</h4>
+            <p class="small-text">column | row</p>
+        </e-flex>
+    </e-item>
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>gap</h3>
+            <p class="small-text">Controla el espacio de separación entre cada elemento dentro del container.</p>
+            <h4>values (n por defecto)</h4>
+            <p class="small-text"> n | s | m | xl</p>
+        </e-flex>
+    </e-item>
+</e-flex>
+
+<pager [notfix]="true" previous="e-button" next="e-card"></pager>

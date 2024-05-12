@@ -1,0 +1,38 @@
+<header-title title="Input"
+    description="e-input es un componente de entrada personalizado diseñado para capturar y procesar información de manera eficiente. Con una interfaz intuitiva y funcionalidades especializadas, ofrece una experiencia de usuario fluida y versátil para ingresar datos de forma rápida y precisa."></header-title>
+<br />
+<h2>Uso</h2>
+<p class="text-desc">Ejemplo básico de cómo se visualiza y cómo utilizar e-input de forma personalizada.</p>
+
+<div class="code-container">
+    <e-input placeholder="Buscar..." [(value)]="busqueda"></e-input>
+    <code>
+        &lt;<span class="tag">e-input </span> <span class="declarations">placeholder</span>=<span class="string">"Buscar..." </span> [(<span class="declarations">value</span>)]=<span class="string">"busquedaModelo"</span>&gt;&lt;/<span class="tag">e-input</span>&gt;
+    </code>
+</div>
+
+<br /><br />
+<h2>Propiedades</h2>
+<p class="text-desc">Documentación de propiedades que contiene el componente e-input.</p>
+<br />
+<e-flex fd="column" gap="xl">
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>placeholder</h3>
+            <p class="small-text">Controla que placeholder tendrá el input.</p>
+            <h4>values ("" por defecto)</h4>
+            <p class="small-text">Tipo string | number, puede contener cualquier valor.</p>
+        </e-flex>
+    </e-item>
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>value</h3>
+            <p class="small-text">Controla el ngModel del input (siempre pasarle propiedad con [()] ya que el dato debe
+                ser compartido entre componentes, ejemplo: value=[(value)])="nombreModelo".</p>
+            <h4>values (null por defecto)</h4>
+            <p class="small-text">Puede contener cualquier modelo tipo string.</p>
+        </e-flex>
+    </e-item>
+</e-flex>
+
+<pager [notfix]="true" previous="e-content" next="e-search"></pager>

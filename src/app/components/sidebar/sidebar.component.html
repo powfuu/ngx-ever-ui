@@ -1,0 +1,28 @@
+<main>
+    <div class="logo-container">
+        <img alt="ever-components" src="/assets/logo_dark.png" />
+        <h1>ever-components <span class="docs">DOCS</span><span class="version">1.0.9</span>
+        </h1>
+    </div>
+    <e-flex fd="column" gap="s">
+        <h2>Introducción</h2>
+        <p [routerLink]="['/ui-components']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">
+            Componentes UI
+        </p>
+        <p [routerLink]="['/installation']" routerLinkActive="active-link">Instalación</p>
+        <p [routerLink]="['/usage']" routerLinkActive="active-link">Uso</p>
+        <h2>Componentes</h2>
+        <p [routerLink]="['/e-button']" routerLinkActive="active-link">Button</p>
+        <p [routerLink]="['/e-flex']" routerLinkActive="active-link">Flex Content</p>
+        <p [routerLink]="['/e-card']" routerLinkActive="active-link">Card</p>
+        <p [routerLink]="['/e-modal']" routerLinkActive="active-link">Modal</p>
+        <p [routerLink]="['/e-item']" routerLinkActive="active-link">Item</p>
+        <p [routerLink]="['/e-badge']" routerLinkActive="active-link">Badge</p>
+        <p [routerLink]="['/e-content']" routerLinkActive="active-link">Content</p>
+        <p [routerLink]="['/e-input']" routerLinkActive="active-link">Input</p>
+        <p [routerLink]="['/e-search']" routerLinkActive="active-link">Search</p>
+        <p [routerLink]="['/e-tooltip']" routerLinkActive="active-link">Tooltip</p>
+        <p [routerLink]="['/e-toast']" routerLinkActive="active-link">Toast</p>
+        <p [routerLink]="['/e-loading']" routerLinkActive="active-link">Loading</p>
+    </e-flex>
+</main>

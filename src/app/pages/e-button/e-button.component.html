@@ -1,0 +1,66 @@
+<header-title title="Button"
+    description="e-button es un botón personalizado que contiene diversos temas de customización y propiedades que lo hacen propio y muy útil a la hora de desarrollar aplicaciones."></header-title>
+<br />
+<h2>Uso</h2>
+<p class="text-desc">Ejemplos básicos de cómo se visualiza y cómo utilizar e-button de forma personalizada.</p>
+
+<br />
+<e-flex fd="column" gap="xl">
+    <h3>Button Primary</h3>
+    <p>Se utiliza para una acción principal.</p>
+</e-flex>
+<div class="code-container">
+    <e-button>Button</e-button>
+    <code>
+       &lt;<span class="tag">e-button</span>&gt;<span>Button</span>&lt;/<span class="tag">e-button</span>&gt;
+    </code>
+</div>
+
+<br />
+<e-flex fd="column" gap="xl">
+    <h3>Button Secondary</h3>
+    <p>Se utiliza para una acción secundaria.</p>
+</e-flex>
+<div class="code-container">
+    <e-button theme="secondary" size="xxl">Button</e-button>
+    <code>
+       &lt;<span class="tag">e-button </span> <span class="declarations">theme</span>=<span class="string">"secondary" </span><span class="declarations">size</span>=<span class="string">"xxl"</span>&gt;<span>Button</span>&lt;/<span class="tag">e-button</span>&gt;
+    </code>
+</div>
+
+<br />
+<e-flex fd="column" gap="xl">
+    <h3>Button Third</h3>
+    <p>Se utiliza para una acción que tiene un concepto tanto primario como secundario.</p>
+</e-flex>
+<div class="code-container">
+    <e-button theme="third" size="s">Button</e-button>
+    <code>
+       &lt;<span class="tag">e-button </span> <span class="declarations">theme</span>=<span class="string">"third" </span><span class="declarations">size</span>=<span class="string">"s"</span>&gt;<span>Button</span>&lt;/<span class="tag">e-button</span>&gt;
+    </code>
+</div>
+
+<br /><br />
+<h2>Propiedades</h2>
+<p class="text-desc">Documentación de propiedades que contiene el componente e-button.</p>
+<br />
+<e-flex fd="column" gap="xl">
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>theme</h3>
+            <p class="small-text">Controla que tema de button utilizará.</p>
+            <h4>values (primary por defecto)</h4>
+            <p class="small-text">primary | secondary | third</p>
+        </e-flex>
+    </e-item>
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>size</h3>
+            <p class="small-text">Controla el tamaño del button.</p>
+            <h4>values (m por defecto)</h4>
+            <p class="small-text"> s | m | xl</p>
+        </e-flex>
+    </e-item>
+</e-flex>
+
+<pager [notfix]="true" previous="usage" next="e-flex"></pager>

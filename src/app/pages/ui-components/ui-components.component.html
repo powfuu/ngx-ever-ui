@@ -1,0 +1,29 @@
+<header-title title="Componentes UI"
+    description="ngx-ever-components es una moderna biblioteca de componentes de interfaz de usuario (UI) para Angular, diseñada para mejorar la interfaz de usuario de las aplicaciones mientras simplifica el tiempo de desarrollo. Con una amplia colección de componentes elegantes, capacita a los desarrolladores de Angular para crear interfaces visualmente atractivas e intuitivas con facilidad. Ya sea que estés construyendo una aplicación web, un panel de control o cualquier otro proyecto basado en Angular, ngx-ever-components proporciona las herramientas que necesitas para elevar tanto la estética como la productividad."></header-title>
+<div>
+    <div class="componentes-utilizables-container">
+        <h3>
+            Componentes utilizables
+        </h3>
+        <p>Antes de utilizar algún componente de ever-components, lo primero es realizar la <span
+                [routerLink]="['/installation']" class="important">instalación</span> y luego dar con
+            los
+            <span [routerLink]="['/usage']" class="important">primeros pasos</span> para utilizar esta librería de la
+            forma correcta.
+        </p>
+    </div>
+</div>
+<div class="eflex">
+    <ng-container *ngFor="let component of components">
+        <div [routerLink]="['/', component]" class="card-component">
+            <div>
+                <p class="hash">{{'&lt;/&gt;'}}</p>
+            </div>
+            <div class="component-container">
+                <p class="component-title">{{ formatoTexto(component) }}</p>
+                <p class="component">{{component}}</p>
+            </div>
+        </div>
+    </ng-container>
+</div>
+<pager next="installation"></pager>

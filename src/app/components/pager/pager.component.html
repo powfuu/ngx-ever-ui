@@ -1,0 +1,20 @@
+<ng-container *ngIf="!notfix">
+    <div class="pager">
+        <div *ngIf="previous" class="previous-container">
+            <e-button [routerLink]="['/'+previous]" theme="secondary">Atrás</e-button>
+        </div>
+        <div *ngIf="next" class="next-container">
+            <e-button [routerLink]="['/'+next]">Siguiente</e-button>
+        </div>
+    </div>
+</ng-container>
+<ng-container *ngIf="notfix">
+    <div class="pager-notfix">
+        <div *ngIf="previous" class="previous-container-notfix">
+            <e-button [routerLink]="['/'+previous]" theme="secondary">Atrás</e-button>
+        </div>
+        <div *ngIf="next" class="next-container-notfix">
+            <e-button [routerLink]="['/'+next]">Siguiente</e-button>
+        </div>
+    </div>
+</ng-container>

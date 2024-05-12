@@ -1,0 +1,33 @@
+<header-title title="Tooltip"
+    description="e-tooltip es un botón personalizado que contiene diversos temas de customización y propiedades que lo hacen propio y muy útil a la hora de desarrollar aplicaciones."></header-title>
+<br />
+<h2>Uso</h2>
+<p class="text-desc">Ejemplo básico de cómo se visualiza y cómo utilizar e-tooltip de forma personalizada.</p>
+
+<div class="code-container">
+    <e-tooltip tooltipText="Texto de Tooltip">
+        <p>Texto con Tooltip (hover)</p>
+    </e-tooltip>
+    <code>
+        &lt;<span class="tag">e-tooltip </span> <span class="declarations">tooltipText</span>=<span class="string">"Texto de Tooltip"</span>&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tag">p</span>&gt;Texto con Tooltip (hover)&lt;/<span class="tag">p</span>&gt;<br>
+        &lt;/<span class="tag">e-tooltip</span>&gt;
+    </code>
+</div>
+
+<br /><br />
+<h2>Propiedades</h2>
+<p class="text-desc">Documentación de propiedades que contiene el componente e-tooltip.</p>
+<br />
+<e-flex fd="column" gap="xl">
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>tooltipText</h3>
+            <p class="small-text">Controla el texto que contendrá el tooltip.</p>
+            <h4>values ("" por defecto)</h4>
+            <p class="small-text">Tipo string, puede contener cualquier valor.</p>
+        </e-flex>
+    </e-item>
+</e-flex>
+
+<pager [notfix]="true" previous="e-search" next="e-toast"></pager>

@@ -1,0 +1,39 @@
+<header-title title="Loader"
+    description="e-loader es un componente de carga diseñado para proporcionar retroalimentación visual mientras se espera que se complete una tarea o proceso en la aplicación. Con su diseño simple pero efectivo, ayuda a mantener a los usuarios informados sobre el progreso de la acción en curso."></header-title>
+<br />
+<h2>Uso</h2>
+<p class="text-desc">Ejemplos básicos de cómo se visualiza y cómo utilizar e-loader de forma personalizada.</p>
+
+<div class="code-container">
+    <e-button (click)="initLoader()">Mostrar loader por 3 segundos</e-button>
+    <e-loader [show]="loadingState" text="Cargando por 3 segundos..."></e-loader>
+    <code>
+        &lt;<span class="tag">e-button</span> (<span class="declarations">click</span>)=<span class="string">"initLoader()"</span>&gt;Mostrar loader por 3 segundos&lt;/<span class="tag">e-button</span>&gt;<br>
+        &lt;<span class="tag">e-loader</span> [<span class="declarations">show</span>]=<span class="string">"loadingState" </span><span class="declarations">text</span>=<span class="string">"Cargando por 3 segundos..."</span>&gt;&lt;/<span class="tag">e-loader</span>&gt;
+    </code>
+</div>
+
+<br /><br />
+<h2>Propiedades</h2>
+<p class="text-desc">Documentación de propiedades que contiene el componente e-loader.</p>
+<br />
+<e-flex fd="column" gap="xl">
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>text</h3>
+            <p class="small-text">Controla que texto tendrá el loader.</p>
+            <h4>values ("Loading..." por defecto)</h4>
+            <p class="small-text">Tipo string, puede contener cualquier valor.</p>
+        </e-flex>
+    </e-item>
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>show</h3>
+            <p class="small-text">Controla el estado del loader.</p>
+            <h4>values (false por defecto)</h4>
+            <p class="small-text">Tipo boolean, false = cerrado, true = abierto.</p>
+        </e-flex>
+    </e-item>
+</e-flex>
+
+<pager [notfix]="true" previous="e-toast"></pager>

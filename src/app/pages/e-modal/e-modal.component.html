@@ -1,0 +1,51 @@
+<header-title title="Modal"
+    description="e-modal es un componente altamente personalizable diseñado para agilizar la creación de modales que representen cualquier tipo de información en un template. Su versatilidad y capacidad de adaptación permiten una implementación rápida y eficiente, ofreciendo una solución práctica y flexible para diversas necesidades de presentación de datos en forma de ventana emergente."></header-title>
+<br />
+<h2>Uso</h2>
+<p class="text-desc">Ejemplo básico de cómo se visualiza y cómo utilizar e-modal.</p>
+
+<div class="code-container">
+    <e-button (click)="openModal()" class="e-modal-b">Mostrar modal</e-button>
+    <e-modal title="Titulo de Modal" [state]="stateModal">
+        <p>Contenido dentro del modal</p>
+    </e-modal>
+    <code>
+        &lt;<span class="tag">e-button</span> (<span class="declarations">click</span>)=<span class="string">"openModal()" </span> <span class="declarations">class</span>=<span class="string">"e-modal-b"</span>&gt;Mostrar modal&lt;/<span class="tag">e-button</span>&gt;<br>
+        &lt;<span class="tag">e-modal </span> <span class="declarations">title</span>=<span class="string">"Titulo de Modal" </span> <span class="declarations">[state]</span>=<span class="string">"stateModal"</span>&gt;<br>
+        &nbsp;&nbsp;&nbsp;&lt;<span class="tag">p</span>&gt;Contenido dentro del modal&lt;/<span class="tag">p</span>&gt;<br>
+        &lt;/<span class="tag">e-modal</span>&gt;
+     </code>
+
+    <code>
+            <span class="declarations">stateModal</span> = <span class="from">new </span> <span class="string">BehaviorSubject</span>&lt;<span class="import">boolean</span>&gt;(<span class="tag">false</span>);<br>
+            <br>
+            <span class="package-text">openModal</span>(): <span class="declarations">void</span> {{"{"}}<br>
+            &nbsp;&nbsp;<span class="tag">this</span>.<span class="import">stateModal</span>.<span class="from">next</span>(<span class="tag">true</span>);<br>
+            {{"}"}}
+          </code>
+</div>
+
+<br /><br />
+<h2>Propiedades</h2>
+<p class="text-desc">Documentación de propiedades que contiene el componente e-modal.</p>
+<br />
+<e-flex fd="column" gap="xl">
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>title</h3>
+            <p class="small-text">Controla que titulo tendrá el modal.</p>
+            <h4>values ("" por defecto)</h4>
+            <p class="small-text">Tipo string, puede contener cualquier valor.</p>
+        </e-flex>
+    </e-item>
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>state</h3>
+            <p class="small-text">Maneja el estado del modal actual, true = abierto y false = cerrado.</p>
+            <h4>values (false por defecto)</h4>
+            <p class="small-text">false | true</p>
+        </e-flex>
+    </e-item>
+</e-flex>
+
+<pager [notfix]="true" previous="e-card" next="e-item"></pager>

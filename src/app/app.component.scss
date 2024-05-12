@@ -28,8 +28,8 @@ main {
 .float-but {
   position: fixed;
   transform: translate(-50%, -50%);
-  top: 100%;
-  margin-top: -35px;
+  top: 0;
+  margin-top: 35px;
   left: 60%;
   z-index: 9999999999;
   transition: 0.3s ease;

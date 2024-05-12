@@ -44,14 +44,14 @@ ul {
   }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 1200px) {
   header {
     width: calc(100% - 62px);
     margin-left: -30px;
   }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 1200px) {
   .install-container {
     display: none;
   }

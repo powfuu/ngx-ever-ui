@@ -7,7 +7,7 @@ import { injectSpeedInsights } from '@vercel/speed-insights';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  stateSideSheet: boolean = true;
+  stateSideSheet: boolean = false;
 
   ngOnInit(): void {
     this.initVercelAnalyticsAndSpeedInsights();

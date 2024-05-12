@@ -31,40 +31,39 @@ main {
   top: 0;
   margin-top: 35px;
   left: 60%;
-  z-index: 9999999999;
+  z-index: 99;
   transition: 0.3s ease;
-  height: 30px;
-  width: 60px;
-  border-radius: 8px;
+  height: 26px;
+  width: 55px;
+  border-radius: 100px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  display: flex;
-  align-items: center;
+  z-index: 9991;
   transition: 0.3s all ease;
-  justify-content: center;
   background: var(--black);
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   display: none;
   color: var(--gray);
   cursor: pointer;
   svg {
-    height: 22px;
-    margin-top: -22px;
+    height: 20px;
+    margin-top: -24px;
   }
 }
 
-@media screen and (min-width: 741px) {
+@media screen and (min-width: 1201px) {
   app-sidebar {
     position: fixed !important;
     transform: translateX(0px) !important;
   }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 1200px) {
   .content {
     margin-left: 30.5px !important;
   }
   .float-but {
-    display: block;
+    display: flex;
     left: 50%;
   }
   app-sidebar {

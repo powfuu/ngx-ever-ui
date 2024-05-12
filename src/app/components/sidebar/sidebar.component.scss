@@ -87,3 +87,16 @@ e-flex {
     margin-left: 10px;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  main {
+    width: 250px;
+    overflow-x: hidden;
+  }
+  .logo-container {
+    img {
+      margin-right: auto;
+      margin-left: -25px;
+    }
+  }
+}

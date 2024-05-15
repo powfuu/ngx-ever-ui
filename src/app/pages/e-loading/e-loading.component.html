@@ -11,8 +11,17 @@
         &lt;<span class="tag">e-button</span> (<span class="declarations">click</span>)=<span class="string">"initLoader()"</span>&gt;Mostrar loader por 3 segundos&lt;/<span class="tag">e-button</span>&gt;<br>
         &lt;<span class="tag">e-loader</span> [<span class="declarations">show</span>]=<span class="string">"loadingState" </span><span class="declarations">text</span>=<span class="string">"Cargando por 3 segundos..."</span>&gt;&lt;/<span class="tag">e-loader</span>&gt;
     </code>
+    <code>
+        <span class="declarations">loadingState</span>: <span class="import">boolean</span> = <span class="tag">false</span>;<br>
+        <br>
+        <span class="package-text">initLoader</span>(): <span class="declarations">void</span> {{"{"}}<br>
+        &nbsp;&nbsp;<span class="tag">this</span>.<span class="declarations">loadingState</span> = <span class="tag">true</span>;<br>
+        &nbsp;&nbsp;<span class="from">setTimeout</span>(() => {{"{"}}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">this</span>.<span class="declarations">loadingState</span> = <span class="tag">false</span>;<br>
+        &nbsp;&nbsp;{{"}"}}, <span class="tag">3000</span>);<br>
+        {{"}"}}
+    </code>
 </div>
-
 <br /><br />
 <h2>Propiedades</h2>
 <p class="text-desc">Documentación de propiedades que contiene el componente e-loader.</p>

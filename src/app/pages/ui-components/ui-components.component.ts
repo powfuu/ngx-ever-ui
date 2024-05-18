@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class UiComponentsComponent {
   components: string[] = [
     'e-button',
+    'e-dropdown',
     'e-flex',
     'e-card',
     'e-modal',
@@ -16,6 +17,9 @@ export class UiComponentsComponent {
     'e-content',
     'e-search',
     'e-input',
+    'e-dialog',
+    'e-item-navigator',
+    'e-sidesheet',
     'e-tooltip',
     'e-toast',
     'e-loading',
@@ -23,6 +27,8 @@ export class UiComponentsComponent {
   formatoTexto(texto: string): string {
     if (texto === 'e-flex') {
       return 'Flex Content';
+    } else if (texto === 'e-item-navigator') {
+      return 'Item Nav';
     }
 
     let textoSinPrefijo = texto.replace(/^e-/, '');

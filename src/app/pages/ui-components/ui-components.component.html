@@ -21,7 +21,7 @@
             </div>
             <div class="component-container">
                 <p class="component-title">{{ formatoTexto(component) }}</p>
-                <p class="component">{{component}}</p>
+                <p [class]="component === 'e-item-navigator' ? 'smalldesc' : ''" class="component">{{component}}</p>
             </div>
         </div>
     </ng-container>

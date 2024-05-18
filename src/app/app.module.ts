@@ -24,6 +24,10 @@ import { ELoadingDoc } from './pages/e-loading/e-loading.component';
 import { HeaderTitleComponent } from './components/header-title/header-title.component';
 import { PagerComponent } from './components/pager/pager.component';
 import { HeaderComponent } from './components/header/header.component';
+import { EDialogComponent } from './components/e-dialog/e-dialog.component';
+import { EDropdownComponent } from './components/e-dropdown/e-dropdown.component';
+import { EItemNavigatorComponent } from './components/e-item-navigator/e-item-navigator.component';
+import { ESidesheetComponent } from './components/e-sidesheet/e-sidesheet.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +51,10 @@ import { HeaderComponent } from './components/header/header.component';
     HeaderTitleComponent,
     PagerComponent,
     HeaderComponent,
+    EDialogComponent,
+    EDropdownComponent,
+    EItemNavigatorComponent,
+    ESidesheetComponent,
   ],
   imports: [
     BrowserModule,

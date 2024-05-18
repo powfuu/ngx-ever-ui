@@ -1,0 +1,86 @@
+<header-title title="Dialog"
+    description="e-dialog es un componente personalizado diseñado para mostrar ventanas emergentes modales en la interfaz de usuario. Con diversas opciones de personalización y propiedades, es altamente versátil y útil en el desarrollo de aplicaciones. Además, permite crear alertas y diálogos para diferentes ocasiones, como confirmaciones, advertencias y errores, proporcionando una solución completa para la interacción con el usuario."></header-title>
+
+<br />
+<h2>Uso</h2>
+<p class="text-desc">Ejemplos básicos de cómo se visualiza y cómo utilizar e-dialog de forma personalizada.</p>
+
+<e-dialog title="Titulo" desc="Descripción" cancelText="Texto cancelar" confirmText="Texto confirmar"
+    [confirmAction]="eventoClickConfirm" [state]="dialogState"></e-dialog>
+<div class="code-container">
+    <e-button (click)="mostrarDialog()">Mostrar dialog</e-button>
+    <code>
+        &lt;<span class="tag">e-dialog</span> <span class="declarations"> title</span>=<span class="string">"Titulo"</span> <span class="declarations"> desc</span>=<span class="string">"Descripción"</span> <span class="declarations"> cancelText</span>=<span class="string">"Texto cancelar"</span> <span class="declarations"> confirmText</span>=<span class="string">"Texto confirmar"</span><br>
+        &nbsp;&nbsp;&nbsp;(<span class="declarations">confirmAction</span>)=<span class="string">"eventoClickConfirm()"</span> [<span class="declarations">state</span>]=<span class="string">"dialogState"</span>&gt;&lt;/<span class="tag">e-dialog</span>&gt;<br>
+        &lt;<span class="tag">e-button</span> (<span class="declarations">click</span>)=<span class="string">"mostrarDialog()"</span>&gt;Mostrar dialog&lt;/<span class="tag">e-button</span>&gt;
+    </code>
+    <code>
+        <span class="declarations">dialogState</span> = <span class="from">new</span> <span class="string"> BehaviorSubject</span>&lt;<span class="import">boolean</span>&gt;(<span class="tag">false</span>);<br>
+        <br>
+        <span class="package-text">mostrarDialog</span>(): <span class="declarations">void</span> {{"{"}}<br>
+        &nbsp;&nbsp;<span class="tag">this</span>.<span class="declarations">dialogState</span>.<span class="from">next</span>(<span class="tag">true</span>);<br>
+        {{"}"}}<br>
+        <br>
+        <span class="package-text">eventoClickConfirm</span>(): <span class="declarations">void</span> {{"{"}}<br>
+        &nbsp;&nbsp;<span class="from">alert</span>(<span class="string">'Dialog clicked!'</span>);<br>
+        {{"}"}}
+    </code>
+</div>
+
+<br /><br />
+<h2>Propiedades</h2>
+<p class="text-desc">Documentación de propiedades que contiene el componente e-dialog.</p>
+<br />
+<e-flex fd="column" gap="xl">
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>title</h3>
+            <p class="small-text">Title que contendrá el dialog.</p>
+            <h4>values ("" por defecto)</h4>
+            <p class="small-text">Tipo string</p>
+        </e-flex>
+    </e-item>
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>desc</h3>
+            <p class="small-text">Description que contendrá el dialog.</p>
+            <h4>values ("" por defecto)</h4>
+            <p class="small-text">Tipo string</p>
+        </e-flex>
+    </e-item>
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>cancelText</h3>
+            <p class="small-text">Description que contendrá el button cancelar, si no hay descripción entonces no se
+                mostrará el button de cancelar.</p>
+            <h4>values ("" por defecto)</h4>
+            <p class="small-text">Tipo string</p>
+        </e-flex>
+    </e-item>
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>confirmText</h3>
+            <p class="small-text">Description que contendrá el button confirmar.</p>
+            <h4>values ("Confirmar" por defecto)</h4>
+            <p class="small-text">Tipo string</p>
+        </e-flex>
+    </e-item>
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>confirmAction</h3>
+            <p class="small-text">Método que se ejecutará al clickar en el button confirmar.</p>
+            <h4>values ("() => void" por defecto)</h4>
+            <p class="small-text">Tipo void</p>
+        </e-flex>
+    </e-item>
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>state</h3>
+            <p class="small-text">Estado del dialog.</p>
+            <h4>values (false por defecto)</h4>
+            <p class="small-text">Tipo boolean</p>
+        </e-flex>
+    </e-item>
+</e-flex>
+
+<pager [notfix]="true" previous="e-input" next="e-item-navigator"></pager>

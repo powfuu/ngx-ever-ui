@@ -15,6 +15,10 @@ import { EToastDoc } from './pages/e-toast/e-toast.component';
 import { ELoadingDoc } from './pages/e-loading/e-loading.component';
 import { InstallationComponent } from './pages/installation/installation.component';
 import { UsageComponent } from './pages/usage/usage.component';
+import { EDialogComponent } from './components/e-dialog/e-dialog.component';
+import { EDropdownComponent } from './components/e-dropdown/e-dropdown.component';
+import { EItemNavigatorComponent } from './components/e-item-navigator/e-item-navigator.component';
+import { ESidesheetComponent } from './components/e-sidesheet/e-sidesheet.component';
 
 const routes: Routes = [
   {
@@ -76,6 +80,22 @@ const routes: Routes = [
   {
     path: 'e-loading',
     component: ELoadingDoc,
+  },
+  {
+    path: 'e-dialog',
+    component: EDialogComponent,
+  },
+  {
+    path: 'e-dropdown',
+    component: EDropdownComponent,
+  },
+  {
+    path: 'e-item-navigator',
+    component: EItemNavigatorComponent,
+  },
+  {
+    path: 'e-sidesheet',
+    component: ESidesheetComponent,
   },
   {
     path: '**',

@@ -1,0 +1,53 @@
+<header-title title="Sidesheet"
+    description="e-sidesheet es un componente personalizado diseñado para mostrar paneles laterales en la interfaz de usuario. Con una variedad de opciones de personalización y propiedades, es altamente versátil y útil en el desarrollo de aplicaciones. Además, ofrece la capacidad de crear alertas para diferentes ocasiones, como éxito, advertencia y error, proporcionando una solución completa para la comunicación con el usuario."></header-title>
+<br />
+<h2>Uso</h2>
+<p class="text-desc">Ejemplos básicos de cómo se visualiza y cómo utilizar e-sidesheet de forma personalizada.</p>
+
+<e-sidesheet [state]="state" size="m" position="left"></e-sidesheet>
+<div class="code-container">
+    <e-button (click)="mostrarSidesheet()">Mostrar Sidesheet</e-button>
+    <code>
+        &lt;<span class="tag">e-button</span> (<span class="declarations">click</span>)=<span class="string">"mostrarSidesheet()"</span>&gt;Mostrar Sidesheet&lt;/<span class="tag">e-button</span>&gt;<br>
+        &lt;<span class="tag">e-sidesheet</span> [<span class="declarations">state</span>]=<span class="string">"state"</span> <span class="declarations"> size</span>=<span class="string">"m"</span> <span class="declarations"> position</span>=<span class="string">"left"</span>&gt;&lt;/<span class="tag">e-sidesheet</span>&gt;
+    </code>
+    <code>
+        <span class="declarations">state</span> = <span class="from">new</span> <span class="string"> BehaviorSubject</span>&lt;<span class="import">boolean</span>&gt;(<span class="tag">false</span>);<br>
+        <br>
+        <span class="package-text">mostrarSidesheet</span>(): <span class="declarations">void</span> {{ '{' }}<br>
+        &nbsp;&nbsp;<span class="tag">this</span>.<span class="declarations">state</span>.<span class="from">next</span>(<span class="tag">true</span>);<br>
+        {{ '}' }}
+    </code>
+</div>
+<br /><br />
+<h2>Propiedades</h2>
+<p class="text-desc">Documentación de propiedades que contiene el componente e-sidesheet.</p>
+<br />
+<e-flex fd="column" gap="xl">
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>state</h3>
+            <p class="small-text">Controla el estado para visualizar el sidesheet.</p>
+            <h4>values (false por defecto)</h4>
+            <p class="small-text">Tipo boolean (true = abierto, false = cerrado).</p>
+        </e-flex>
+    </e-item>
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>size</h3>
+            <p class="small-text">Controla el tamaño del Sidesheet.</p>
+            <h4>values ('m' por defecto)</h4>
+            <p class="small-text">s | m | xl</p>
+        </e-flex>
+    </e-item>
+    <e-item>
+        <e-flex fd="column" gap="xl">
+            <h3>position</h3>
+            <p class="small-text">Controla la posición del Sidesheet.</p>
+            <h4>values ('left' por defecto)</h4>
+            <p class="small-text">left | right</p>
+        </e-flex>
+    </e-item>
+</e-flex>
+
+<pager [notfix]="true" previous="e-item-navigator" next="e-tooltip"></pager>

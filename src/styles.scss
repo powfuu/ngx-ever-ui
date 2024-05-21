@@ -120,6 +120,7 @@ p {
 /* Ocultar el fondo del track de la barra de desplazamiento */
 ::-webkit-scrollbar {
   width: 5px; /* Ancho de la barra de desplazamiento vertical */
+  height: 0px;
 }
 
 /* Estilo del track de la barra de desplazamiento (la pista) */

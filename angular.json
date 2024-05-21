@@ -58,10 +58,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "everui-docs:build:production"
+              "buildTarget": "everui-docs:build:production"
             },
             "development": {
-              "browserTarget": "everui-docs:build:development"
+              "buildTarget": "everui-docs:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -69,7 +69,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "everui-docs:build"
+            "buildTarget": "everui-docs:build"
           }
         },
         "test": {
